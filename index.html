@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Editing Webpage</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header class="extended-header" style="background-image: url('assets/images/logo.jpg'); background-size: cover; background-position: center;">
+        
+    </header>
+        
+    </header>
+    <div class="category-buttons">
+        <button onclick="location.href='components/color-grading.html'">Color Grading</button>
+        <button onclick="location.href='components/retouching.html'">Retouching</button>
+        <button onclick="location.href='components/background-editing.html'">Background Editing</button>
+    </div>
+    <main>
+        <section id="introduction">
+            <h2>Welcome to the Arena of Incredible edits</h2>
+            <p>Explore samples of our stunning edits.</p>
+        </section>
+        <section id="carousel">
+            <h2>Our Works</h2>
+            <div class="carousel">
+                <div><img src="assets/images/Boy1A.jpg" alt="Before"></div>
+                <div><img src="assets/images/Boy1B.jpg" alt="After"></div>
+                <div><img src="assets/images/Girl1A.jpg" alt="Before"></div>
+                <div><img src="assets/images/Girl1B.jpg" alt="After"></div>
+                <div><img src="assets/images/Boy2A.jpg" alt="Before"></div>
+                <div><img src="assets/images/Boy2B.jpg" alt="After"></div>
+                <div><img src="assets/images/Boy3A.jpg" alt="Before"></div>
+                <div><img src="assets/images/Boy3B.jpg" alt="After"></div>
+                <div><img src="assets/images/Boy5A.jpg" alt="Before"></div>
+                <div><img src="assets/images/Boy5B.jpg" alt="After"></div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        <section id="edit-picture">
+            <button class="edit-button" onclick="toggleCategories()">Edit your picture</button>
+            <div id="categories" style="display:none;">
+                <ul>
+                    <li><a href="components/color-grading.html">Color Grading</a></li>
+                    <li><a href="components/retouching.html">Retouching</a></li>
+                    <li><a href="components/background-editing.html">Background Editing</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Picture Editing Webpage. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+
+        function toggleCategories() {
+            var categories = document.getElementById('categories');
+            if (categories.style.display === 'none' || categories.style.display === '') {
+                categories.style.display = 'block';
+            } else {
+                categories.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

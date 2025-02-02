@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retouching</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <h1>Retouching</h1>
+        <p>Enhance your photos with our retouching tools.</p>
+    </header>
+    <main>
+        <section id="retouching-options">
+            <h2>Tools Available</h2>
+            <ul>
+                <li>Skin Smoothing</li>
+                <li>Blemish Removal</li>
+                <li>Color Correction</li>
+                <li>Sharpening</li>
+            </ul>
+            <p>Use the tools above to improve your images and achieve the desired look.</p>
+        </section>
+        
+      
+
+        <section id="carousel" class="small-carousel">
+            <h2>Our Works</h2>
+            <div class="carousel">
+                <div>
+                    <img src="../assets/images/Boy4B.jpg" alt="Before">
+                    <p>GHS 10</p>
+                    <button class="edit-button" onclick="openWhatsApp()">Edit your picture</button>
+                </div>
+                <div>
+                    <img src="../assets/images/Boy4A.jpg" alt="After">
+                    <p>GHS 10</p>
+                    <button class="edit-button" onclick="openWhatsApp()">Edit your picture</button>
+                </div>
+                
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Picture Editing Webpage. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+
+        function openWhatsApp() {
+            const phoneNumber = '233249469265'; // Replace with your actual phone number in international format
+            const message = 'I want retouching. Should I send my picture?';
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+        }
+    </script>
+</body>
+</html>

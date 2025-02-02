@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    height: 150px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+/* Add this to your existing styles.css file */
+/* Add this to your existing styles.css file */
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.small-carousel .carousel img {
+    width: 65%; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.carousel div {
+    text-align: center;
+}
+
+.carousel p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+#edit-picture {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+#categories ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+.extended-header {
+    height: px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#categories ul li {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+.category-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+.category-buttons button {
+    background-color: #007BFF; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+    background-color: #0056b3;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
